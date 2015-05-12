@@ -315,12 +315,10 @@ chip</description>
 <wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.2032" layer="51"/>
 <wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="-1.905" y1="-2.875" x2="-3.175" y2="-2.875" width="0.2032" layer="51"/>
 <wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
@@ -1195,25 +1193,18 @@ Source: www.kingbright.com</description>
 <smd name="G" x="-0.95" y="-0.175" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="S" x="0.95" y="-0.175" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="D" x="0" y="1.85" dx="2.05" dy="2.9" layer="1" rot="R90"/>
-<wire x1="-1.525" y1="0.25" x2="-1.525" y2="1.575" width="0.06" layer="25"/>
-<wire x1="-1.525" y1="1.575" x2="1.525" y2="1.575" width="0.06" layer="21"/>
-<wire x1="1.525" y1="1.575" x2="1.525" y2="0.25" width="0.06" layer="21"/>
-<wire x1="1.525" y1="0.25" x2="-1.525" y2="0.25" width="0.06" layer="21"/>
-<text x="-0.7" y="0.8" size="0.254" layer="21" font="vector">MOSFET</text>
-<text x="-0.325" y="-0.525" size="0.254" layer="21" font="vector">G</text>
-<text x="0.175" y="-0.525" size="0.254" layer="21" font="vector">S</text>
-<text x="-1.3" y="3.275" size="0.254" layer="21" font="vector">D</text>
-<text x="-1.65" y="0.45" size="0.3048" layer="27" font="vector" rot="R90">&gt;Name</text>
+<text x="-0.225" y="-0.525" size="0.254" layer="21" font="vector">G</text>
+<text x="0.075" y="-0.525" size="0.254" layer="21" font="vector">S</text>
+<text x="-1.75" y="0.3" size="0.3048" layer="27" font="vector" rot="R90">&gt;Name</text>
 </package>
 <package name="BAS16WS_DIODE">
 <smd name="P1" x="-1.3" y="0" dx="1" dy="0.6" layer="1"/>
 <smd name="P2" x="1.3" y="0" dx="1" dy="0.6" layer="1"/>
-<wire x1="-2.2" y1="0.85" x2="2.2" y2="0.85" width="0.06" layer="21"/>
-<wire x1="2.2" y1="0.85" x2="2.2" y2="-0.85" width="0.06" layer="21"/>
-<wire x1="2.2" y1="-0.85" x2="-2.2" y2="-0.85" width="0.06" layer="21"/>
-<wire x1="-2.2" y1="-0.85" x2="-2.2" y2="0.85" width="0.06" layer="21"/>
-<text x="-0.5" y="-0.1" size="0.254" layer="21" font="vector">DIODE</text>
-<wire x1="-0.6" y1="0.6" x2="-0.6" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="0.55" x2="2.2" y2="0.55" width="0.06" layer="21"/>
+<wire x1="2.2" y1="0.55" x2="2.2" y2="-0.5" width="0.06" layer="21"/>
+<wire x1="2.2" y1="-0.5" x2="-2.2" y2="-0.5" width="0.06" layer="21"/>
+<wire x1="-2.2" y1="-0.5" x2="-2.2" y2="0.55" width="0.06" layer="21"/>
+<wire x1="-0.4" y1="0.4" x2="-0.4" y2="-0.3" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2065,7 +2056,7 @@ Source: www.kingbright.com</description>
 <junction x="264.16" y="93.98"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="N$38" class="2">
 <segment>
 <pinref part="U$9" gate="G$1" pin="D"/>
 <pinref part="U$10" gate="G$1" pin="P2"/>
